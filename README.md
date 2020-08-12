@@ -2,7 +2,7 @@
 
 This is more of a checklist for myself. May contain useful tips and tricks.
 
-Everything was tested on Kali Linux v2020.1b (64-bit).
+Everything was tested on Kali Linux OS v2020.1b (64-bit).
 
 For help with any of the tools write **<tool_name> -h | --help** or **man <tool_name>**.
 
@@ -17,6 +17,8 @@ Sometimes **-h** can be mistaken for a host or some other option. If that's the 
 * [Dmitry](#dmitry)
 
 * [theHarvester](#theharvester)
+
+* [FOCA](#foca)
 
 * [Fierce](#fierce)
 
@@ -39,6 +41,8 @@ Sometimes **-h** can be mistaken for a host or some other option. If that's the 
 * [Nikto](#nikto)
 
 * [WPScan](#wpscan)
+
+* [SecLists](#seclists)
 
 * [testssl.sh](#testssl-sh)
 
@@ -143,6 +147,26 @@ theharvester -d somesite.com -l 500 -b google -f theharvester_results.html
 **Convenient for gathering emails.**
 
 For more options read the manual.
+
+<p id="foca"/>
+
+### FOCA (Fingerprinting Organizations with Collected Archives)
+
+Find metadata and hidden information in documents.
+
+Tested on Windows 10 Enterprise OS (64-bit).
+
+Setup:
+
+* download and install [MS SQL Server 2014 Express](https://www.microsoft.com/en-us/download/confirmation.aspx?id=42299) or greater,
+
+* download and install [MS .NET Framework 4.7.1 Runtime](https://dotnet.microsoft.com/download/dotnet-framework/net471) or greater,
+
+* download and install [MS Visual C++ 2010 (64-bit)](https://www.microsoft.com/en-us/download/details.aspx?id=14632) or greater,
+
+* download and install [FOCA](https://github.com/ElevenPaths/FOCA/releases).
+
+The GUI is very intuitive.
 
 <p id="fierce"/>
 
@@ -359,6 +383,22 @@ wpscan --url somesite.com:80 -o wpscan_results.txt
 ```
 
 For more options read the manual.
+
+<p id="seclists"/>
+
+### SecLists
+
+Download a useful collection of multiple types of lists for security assessments.
+
+Setup:
+
+```fundamental
+apt-get install seclists
+```
+
+Lists will be located at `/usr/share/seclists/`.
+
+Or, download the collection manually from [here](https://github.com/danielmiessler/SecLists/releases).
 
 <p id="testssl-sh"/>
 
