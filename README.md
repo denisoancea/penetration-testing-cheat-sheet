@@ -40,6 +40,8 @@ Sometimes **-h** can be mistaken for a host or some other option. If that's the 
 
 * [WPScan](#wpscan)
 
+* [testssl.sh](#testssl-sh)
+
 **3. [Gaining Access](#3-gaining-access)**
 
 * [Useful Websites](#3-gaining-access-useful-websites)
@@ -357,6 +359,26 @@ wpscan --url somesite.com:80 -o wpscan_results.txt
 ```
 
 For more options read the manual.
+
+<p id="testssl-sh"/>
+
+### testssl.sh
+
+Setup:
+
+```fundamental
+git clone https://github.com/drwetter/testssl.sh
+cd testssl.sh
+chmod +x testssl.sh
+```
+
+Test an SSL/TLS certificate (i.e. SSL/TLS ciphers, protocols, etc.):
+
+```fundamental
+./testssl.sh somesite.com:443
+```
+
+For more options run `./testssl.sh --help`.
 
 <p id="3-gaining-access"/>
 
