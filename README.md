@@ -66,6 +66,8 @@ Sometimes **-h** can be mistaken for a host or some other option. If that's the 
 
 * [Useful Websites](#4-password-cracking-useful-websites)
 
+* [hash-identifier](#hash-identifier)
+
 * [Hashcat](#hashcat)
 
 * [Hydra](#hydra)
@@ -602,7 +604,7 @@ So far there is no easy way to generate a DLL nor MSI file with a stageless mete
 
 **Google a hash before trying to crack it because you might save yourself a lot of time and trouble.**
 
-Use Google Dorks to find files and within file's properties a domain username to brute force.
+Use Google Dorks to find files and within file's properties a domain username to brute force or use [FOCA](#foca).
 
 Keep in mind that you might lockout someone's account.
 
@@ -614,11 +616,23 @@ You can find a bunch of wordlists located at `/usr/share/seclists/` directory.
 
 ### Useful Websites
 
+[gchq.github.io/CyberChef](https://gchq.github.io/CyberChef/)
+
 [www.onlinehashcrack.com](https://www.onlinehashcrack.com)
 
 [hashkiller.io/listmanager](https://hashkiller.io/listmanager)
 
 [crackstation.net](https://crackstation.net)
+
+<p id="hash-identifier"/>
+
+### hash-identifier
+
+To identify a hash type, run the following tool:
+
+```fundamental
+hash-identifier
+```
 
 <p id="hashcat"/>
 
